@@ -1,0 +1,10 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1767737587
+icon.svg::CompressedTexture2D/CompressedTexture2D::49881220127351454::1767737588::1767737664::1::::<><><>0<>0<>1f035d0704a56b141aaee2849e9df3f7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+playground.tscn::PackedScene::9169553852368962459::1767739044::0::1::::<><><>0<>0<><>::uid://dbgiemk47m0sl::::res://player/player.tscn
+::res://player/::1767737587
+player.tscn::PackedScene::7242330687448582611::1767739044::0::1::::<><><>0<>0<><>::uid://cbl5m3x7edccm::::res://player/sprites/ExamplePlayerSprite.png<>uid://1ifg2rar0gth::::res://player/scripts/Player.gd
+::res://player/scripts/::1767737587
+Player.gd::GDScript/GDScript::1841740700764418749::1767739018::0::1::::player<>CharacterBody2D<><>0<>0<><>::
+::res://player/sprites/::1767737588
+ExamplePlayerSprite.png::CompressedTexture2D/CompressedTexture2D::4867582813272449520::1767737590::1767737664::1::::<><><>0<>0<>62678b4855ec4fdb23ca7e40c25a21af<>res://.godot/imported/ExamplePlayerSprite.png-4bba829ddabbc6d45d21ad0746f328de.ctex::
