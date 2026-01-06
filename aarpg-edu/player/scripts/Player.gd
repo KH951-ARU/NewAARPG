@@ -23,8 +23,8 @@ func _process(delta: float) -> void:
 	direction.y = Input.get_action_strength("Down") - Input.get_action_strength("Up")
 	
 	velocity = direction * move_speed
-	
-	UpdateAnimation()
+	if SetState() == true || SetDirection() == true:
+		UpdateAnimation()
 	
 	pass
 
@@ -33,12 +33,28 @@ func _physics_process( delta ):
 	move_and_slide()
 
 func SetDirection() -> bool:
+	var new_dir : Vector2 = cardinal_direction
+	if direction == Vector2.ZERO:
+		return false
 	
+	if direction.y == 0:
+		new_dir= Vector2.LEFT if direction.x < 0 else Vector2.RIGHT
+	elif  direction.x == 0:
+		new_dir = Vector2.UP if direction.y < 0 else  Vector2.DOWN
+	
+	if new_dir == cardinal_direction:
+		return false
+	
+	cardinal_direction = new_dir
+	sprite_2d.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1
 	return true
 
 
 func SetState() -> bool:
-	
+	var new_state : String = "idle" if direction == Vector2.ZERO else "walk"
+	if new_state == state:
+		return false
+	state = new_state
 	return true
 
 func UpdateAnimation() -> void:
