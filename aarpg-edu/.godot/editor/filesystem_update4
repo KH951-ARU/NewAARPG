@@ -1,7 +1,4 @@
+res://Tilemaps/grass-01.tscn
+res://Tilemaps/Grass-01.tscn
 res://player/player.tscn
-res://player/scripts/Player.gd
 res://playground.tscn
-res://player/scripts/state.gd
-res://player/scripts/Player_State_Machine.gd
-res://player/scripts/state_idle.gd
-res://player/scripts/state_walk.gd
