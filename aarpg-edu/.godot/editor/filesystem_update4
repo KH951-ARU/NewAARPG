@@ -3,3 +3,6 @@ res://Tilemaps/Grass-01.tscn
 res://player/player.tscn
 res://playground.tscn
 res://player/scripts/Player.gd
+res://player/scripts/state_attack.gd
+res://player/scripts/state_idle.gd
+res://player/scripts/state_walk.gd
