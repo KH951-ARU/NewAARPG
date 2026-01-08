@@ -2,3 +2,4 @@ res://Tilemaps/grass-01.tscn
 res://Tilemaps/Grass-01.tscn
 res://player/player.tscn
 res://playground.tscn
+res://player/scripts/Player.gd

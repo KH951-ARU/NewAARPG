@@ -17,8 +17,15 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	
-	direction.x = Input.get_action_strength("Right") - Input.get_action_strength("Left")
-	direction.y = Input.get_action_strength("Down") - Input.get_action_strength("Up")
+	##v1
+	#direction.x = Input.get_action_strength("Right") - Input.get_action_strength("Left")
+	#direction.y = Input.get_action_strength("Down") - Input.get_action_strength("Up")
+	
+	direction = Vector2(
+		Input.get_axis("Left" , "Right"),
+		Input.get_axis("Up","Down") 
+	).normalized()
+	
 	pass
 
 
