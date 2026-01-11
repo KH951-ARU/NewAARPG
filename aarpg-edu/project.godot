@@ -52,7 +52,10 @@ Attack={
 
 [layer_names]
 
-2d_physics/layer_1="pls"
+2d_physics/layer_1="player"
+2d_physics/layer_2="playerHurt"
+2d_physics/layer_5="walls"
+2d_physics/layer_9="Enemy"
 
 [rendering]
 

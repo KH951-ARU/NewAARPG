@@ -6,6 +6,7 @@ class_name State_Attack extends State
 @onready var animation_player: AnimationPlayer = $"../../AnimationPlayer"
 @onready var attack_anim: AnimationPlayer = $"../../Sprite2D/AttackEffectSprite/AnimationPlayer"
 @onready var audio: AudioStreamPlayer2D = $"../../Audio/AudioStreamPlayer2D"
+@onready var hurt_box: Hurtbox = $"../../Interactions/HurtBox"
 
 
 var attacking : bool = false
@@ -24,11 +25,17 @@ func Enter() -> void:
 	audio.play()
 	
 	attacking = true
+	hurt_box.monitoring = true
 	pass
 
 ## what happends when the player exit state
 func Exit() -> void:
 	animation_player.animation_finished.disconnect( EndAttack )
+	attacking = false
+	
+	
+	await get_tree().create_timer( 0.075 ).timeout
+	hurt_box.monitoring = false
 	pass
 
 ## what happends when the process update in this state
