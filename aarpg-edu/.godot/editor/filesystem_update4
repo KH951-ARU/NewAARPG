@@ -7,3 +7,4 @@ res://Tilemaps/Grass-01.tscn
 res://GeneralNodes/Hitbox/hit_box.tscn
 res://GeneralNodes/Hurtbox/hurt_box.tscn
 res://Props/plants/plant.tscn
+res://Enemies/Slime/slime.tscn
