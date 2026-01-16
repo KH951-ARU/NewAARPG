@@ -1,12 +1,9 @@
-res://GeneralNodes/Hitbox/hitbox.gd
-res://playground.tscn
-res://GeneralNodes/Hurtbox/hurtbox.gd
 res://player/player.tscn
+res://player/scripts/PlayerCameraScript.gd
+res://playground.tscn
+res://00_globals/GlobalLevelManager.gd
+res://Tilemaps/LevelTileMap.gd
 res://Tilemaps/Grass-01.tscn
 res://GeneralNodes/Hitbox/hit_box.tscn
 res://GeneralNodes/Hurtbox/hurt_box.tscn
 res://Props/plants/plant.tscn
-res://Props/plants/plant.gd
-res://player/scripts/state_attack.gd
-res://player/scripts/Player.gd
-res://player/scripts/PlayerInteractionHost.gd
