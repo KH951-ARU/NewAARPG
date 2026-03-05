@@ -1,6 +1,11 @@
-res://Enemies/Slime/slime.tscn
-res://Enemies/scripts/enemy.gd
-res://playground.tscn
-res://Enemies/scripts/states/enemy_state.gd
-res://Enemies/scripts/enemy_state_machine.gd
 res://player/player.tscn
+res://Enemies/scripts/enemy.gd
+res://00_globals/Globals_player_manager.gd
+res://player/scripts/Player.gd
+res://playground.tscn
+res://Enemies/Slime/slime.tscn
+res://Enemies/scripts/enemy_state_machine.gd
+res://Enemies/scripts/states/enemy_state_idle.gd
+res://Enemies/scripts/states/enemy_state_wander.gd
+res://Enemies/scripts/states/enemy_state_stun.gd
+res://Enemies/scripts/states/enemy_state_destroy.gd

@@ -16,6 +16,7 @@ var direction : Vector2 = Vector2.ZERO
 signal DirectionChanged( new_direction : Vector2)
 
 func _ready() -> void:
+	PlayerManager.player = self
 	state_machine.Initialise(self)
 	pass
 

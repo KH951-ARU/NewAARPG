@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 LevelManager="*res://00_globals/GlobalLevelManager.gd"
+PlayerManager="*res://00_globals/Globals_player_manager.gd"
 
 [display]
 
@@ -25,6 +26,10 @@ window/size/viewport_height=270
 window/size/window_width_override=1920
 window/size/window_height_override=1080
 window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/ridiculous_coding/plugin.cfg")
 
 [input]
 

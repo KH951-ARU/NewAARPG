@@ -18,8 +18,12 @@ func _ready() -> void:
 	pass
 
 
-func _process(delta: float) -> void:
-	
+func _process( delta: float) -> void:
+	change_state( current_state.process( delta ) )
+	pass
+
+func _physics_process(delta: float) -> void:
+	change_state( current_state.physics( delta ) )
 	pass
 
 func initialise( _enemy : Enemy) -> void:
@@ -37,6 +41,7 @@ func initialise( _enemy : Enemy) -> void:
 	if states.size() > 0:
 		change_state( states[0] )
 		process_mode = Node.PROCESS_MODE_INHERIT
+	pass
 
 func change_state( new_state : EnemyState ) -> void:
 	if new_state == null || new_state == current_state:
