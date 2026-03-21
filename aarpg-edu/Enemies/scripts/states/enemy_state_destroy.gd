@@ -7,6 +7,7 @@ class_name EnemyStateDestroy extends EnemyState
 @export_category("AI")
 
 
+var _damage_postion : Vector2
 var _direction :Vector2
 
 
@@ -17,10 +18,9 @@ func init() -> void:
 
 func enter() -> void:
 	enemy.invulnerable = true
-	_direction = enemy.global_position.direction_to( enemy.player.global_position )
+	_direction = enemy.global_position.direction_to( _damage_postion )
 	enemy.set_direction( _direction )
 	enemy.velocity = _direction * -Knochback_speed
-	
 	enemy.update_animation( anim_name )
 	enemy.animation_player.animation_finished.connect( _on_animation_finished )
 	pass
@@ -36,7 +36,8 @@ func process( _delta : float ) -> EnemyState:
 func physics( _delta : float ) -> EnemyState:
 	return null
 
-func _on_enemy_destroyed( ) -> void:
+func _on_enemy_destroyed( hurtbox : Hurtbox ) -> void:
+	_damage_postion = hurtbox.global_position
 	state_machine.change_state( self )
 
 

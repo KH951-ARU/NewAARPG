@@ -56,7 +56,7 @@ func set_direction( _new_direction : Vector2) -> bool:
 
 
 func update_animation ( state : String ) -> void:
-	animation_player.play( state + "_" +anim_direction() )
+	animation_player.play( state + "_" + anim_direction() )
 	pass 
 
 

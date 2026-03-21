@@ -1,9 +1,10 @@
+Node
 AnimationPlayer
+CollisionShape2D
+Hitbox
 Sprite2D
 AudioStreamPlayer2D
 AudioStreamPlayer
-Node
-CollisionShape2D
 CharacterBody2D
 Node2D
 StaticBody2D

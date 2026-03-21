@@ -6,18 +6,31 @@ var cardinal_direction : Vector2 = Vector2.DOWN
 const DIR_4 = [ Vector2.RIGHT, Vector2.DOWN, Vector2.LEFT,Vector2.UP ]
 var direction : Vector2 = Vector2.ZERO
 
+## health & status varibles
+var invulnerable : bool = false
+var HP : int = 6
+var max_HP : int = 6
+
 #on ready varibles
 #_______________________________
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var state_machine: PlayerStateMachine = $StateMachine
+@onready var effect_animation_player : AnimationPlayer = $EffectAnimationPlayer
+@onready var hitbox : Hitbox = $Hitbox
+
+
+
 
 ##signals
 signal DirectionChanged( new_direction : Vector2)
+signal player_damaged( hurtbox : Hurtbox)
 
 func _ready() -> void:
 	PlayerManager.player = self
 	state_machine.Initialise(self)
+	hitbox.Damaged.connect( _take_damage )
+	updateHP( 99 )
 	pass
 
 func _process(delta: float) -> void:
@@ -53,9 +66,6 @@ func SetDirection() -> bool:
 	sprite_2d.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1
 	return true
 
-
-
-
 func UpdateAnimation( state : String) -> void:
 	animation_player.play(state + "_" + AnimDirection())
 	pass
@@ -68,3 +78,28 @@ func AnimDirection() -> String:
 		return "up"
 	else:
 		return "side"
+
+func _take_damage( hurtbox : Hurtbox ) -> void:
+	if invulnerable == true:
+		return
+	updateHP( -hurtbox.damage )
+	if HP > 0:
+		player_damaged.emit( hurtbox )
+	else:
+		player_damaged.emit( hurtbox )
+		updateHP( 99 )
+	pass
+
+func updateHP( delta : int ) -> void:
+	HP = clampi( HP + delta , 0, max_HP)
+	pass
+
+func make_invulnerable( _duration : float = 1.0 ) -> void:
+	invulnerable = true
+	hitbox.monitoring = false
+	
+	await get_tree().create_timer( _duration ).timeout
+	
+	invulnerable = false
+	hitbox.monitoring = true
+	pass

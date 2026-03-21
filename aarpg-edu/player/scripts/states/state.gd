@@ -1,9 +1,14 @@
 class_name State extends Node
 
 ##ref to player
-static  var player: player
+static var player: player
+static var  state_machine : PlayerStateMachine
 
 func _ready() -> void:
+	pass
+
+func _init() -> void:
+	
 	pass
 
 ## what happends when the player enter state
