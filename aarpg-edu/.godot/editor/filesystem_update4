@@ -1,10 +1,2 @@
 res://playground.tscn
-res://Enemies/scripts/enemy.gd
-res://Enemies/scripts/states/enemy_state_destroy.gd
-res://Enemies/scripts/states/enemy_state_stun.gd
 res://player/player.tscn
-res://Enemies/Slime/slime.tscn
-res://player/scripts/Player.gd
-res://player/scripts/states/state.gd
-res://player/scripts/states/state_stun.gd
-res://player/scripts/Player_State_Machine.gd
