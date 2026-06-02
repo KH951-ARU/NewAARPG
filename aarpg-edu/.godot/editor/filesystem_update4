@@ -1,2 +1,8 @@
 res://playground.tscn
 res://player/player.tscn
+res://player/scripts/Player.gd
+res://Enemies/Slime/slime.tscn
+res://00_globals/Globals_player_manager.gd
+res://Enemies/scripts/enemy.gd
+res://player/scripts/PlayerInteractionHost.gd
+res://player/scripts/states/state_stun.gd

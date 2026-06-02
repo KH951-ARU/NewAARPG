@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1778439657
+::res://::1780400271
 default_env.tres::Environment/Environment::-1::1773075707::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::49881220127351454::1773075707::1773076020::1::::<><><>0<>0<>1f035d0704a56b141aaee2849e9df3f7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-playground.tscn::PackedScene/PackedScene::9169553852368962459::1773837971::0::1::::<><><>0<>0<><>::uid://dbgiemk47m0sl::::res://player/player.tscn<>uid://cbcshi3mko6no::::res://Tilemaps/Grass-01.tscn<>uid://bxrhnrmybxdpd::::res://Props/plants/plant.tscn<>uid://dv1hem4cvf3t8::::res://Enemies/Slime/slime.tscn
+playground.tscn::PackedScene::9169553852368962459::1778440450::0::1::::<><><>0<>0<><>::uid://dbgiemk47m0sl::::res://player/player.tscn<>uid://cbcshi3mko6no::::res://Tilemaps/Grass-01.tscn<>uid://bxrhnrmybxdpd::::res://Props/plants/plant.tscn<>uid://dv1hem4cvf3t8::::res://Enemies/Slime/slime.tscn
 ::res://00_globals/::1773075707
 GlobalLevelManager.gd::GDScript/GDScript::3865096367695800597::1773075707::0::1::::<>Node<><>0<>0<><>::
 Globals_player_manager.gd::GDScript/GDScript::7892847607316658600::1773075707::0::1::::<>Node<><>0<>0<><>::
@@ -56,8 +56,8 @@ hurt_box.tscn::PackedScene/PackedScene::989990122129281944::1773075707::0::1::::
 ::res://GUI/::1778439536
 ::res://GUI/Player_hud/::1778439611
 gui-health.png::CompressedTexture2D/CompressedTexture2D::2570058270298692666::1778439536::1778439611::1::::<><><>0<>0<>1b245f2c0dcc773ef1f966e60d83df23<>res://.godot/imported/gui-health.png-65b1c00bcf791095811c09517ddd3dff.ctex::
-::res://player/::1778439536
-player.tscn::PackedScene/PackedScene::7242330687448582611::1778439536::0::1::::<><><>0<>0<><>::uid://1ifg2rar0gth::::res://player/scripts/Player.gd<>uid://0jr0l2p7mj27::::res://player/sprites/PlayerSprite02.png<>uid://yaw2nuephij2::::res://player/sprites/AttackSprite01.png<>uid://d3u0i85re0gy6::::res://player/scripts/Player_State_Machine.gd<>uid://o73xficohxex::::res://player/sprites/Shadow.png<>uid://dgm7pr6o78ehm::::res://player/scripts/states/state_idle.gd<>uid://bb2neug534fiy::::res://player/scripts/states/state_walk.gd<>uid://bu5lms8c7epoa::::res://player/scripts/states/state_attack.gd<>uid://bhsioegfckp4a::::res://player/audio/SwordSwoosh.wav<>uid://dohl4pm8oglj0::::res://player/scripts/PlayerInteractionHost.gd<>uid://ods80r8p4hu3::::res://GeneralNodes/Hurtbox/hurt_box.tscn<>uid://cmaow5eljfi5c::::res://player/scripts/PlayerCameraScript.gd<>uid://dkcvf3vep2u23::::res://player/scripts/states/state_stun.gd<>uid://cdv0q7mfjxtm0::::res://GeneralNodes/Hitbox/hitbox.gd<>uid://48iicbpmdgjh::::res://player/audio/hit_player.wav
+::res://player/::1778440472
+player.tscn::PackedScene::7242330687448582611::1778440472::0::1::::<><><>0<>0<><>::uid://1ifg2rar0gth::::res://player/scripts/Player.gd<>uid://0jr0l2p7mj27::::res://player/sprites/PlayerSprite02.png<>uid://yaw2nuephij2::::res://player/sprites/AttackSprite01.png<>uid://d3u0i85re0gy6::::res://player/scripts/Player_State_Machine.gd<>uid://o73xficohxex::::res://player/sprites/Shadow.png<>uid://dgm7pr6o78ehm::::res://player/scripts/states/state_idle.gd<>uid://bb2neug534fiy::::res://player/scripts/states/state_walk.gd<>uid://bu5lms8c7epoa::::res://player/scripts/states/state_attack.gd<>uid://bhsioegfckp4a::::res://player/audio/SwordSwoosh.wav<>uid://dohl4pm8oglj0::::res://player/scripts/PlayerInteractionHost.gd<>uid://ods80r8p4hu3::::res://GeneralNodes/Hurtbox/hurt_box.tscn<>uid://cmaow5eljfi5c::::res://player/scripts/PlayerCameraScript.gd<>uid://dkcvf3vep2u23::::res://player/scripts/states/state_stun.gd<>uid://cdv0q7mfjxtm0::::res://GeneralNodes/Hitbox/hitbox.gd<>uid://48iicbpmdgjh::::res://player/audio/hit_player.wav
 ::res://player/audio/::1778439613
 hit_player.wav::AudioStreamWAV/AudioStreamWAV::2104101060969479881::1778439536::1778439613::1::::<><><>0<>0<>d5892ae056082ee96a9f78589518a12d<>res://.godot/imported/hit_player.wav-906e5c3229ae8f245a876efcb6d12a8d.sample::
 SwordSwoosh.wav::AudioStreamWAV/AudioStreamWAV::2915412345381692198::1773075707::1773076021::1::::<><><>0<>0<>780044f668904e24df0e929ad9f02dca<>res://.godot/imported/SwordSwoosh.wav-f30e293b6421bffc875aeb09805a5384.sample::

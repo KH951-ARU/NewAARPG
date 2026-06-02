@@ -27,7 +27,7 @@ signal DirectionChanged( new_direction : Vector2)
 signal player_damaged( hurtbox : Hurtbox)
 
 func _ready() -> void:
-	PlayerManager.player = self
+	PlayerManager.Player = self
 	state_machine.Initialise(self)
 	hitbox.Damaged.connect( _take_damage )
 	updateHP( 99 )
@@ -85,8 +85,10 @@ func _take_damage( hurtbox : Hurtbox ) -> void:
 	updateHP( -hurtbox.damage )
 	if HP > 0:
 		player_damaged.emit( hurtbox )
+		print(" hp > 0")
 	else:
 		player_damaged.emit( hurtbox )
+		print( "hp 99")
 		updateHP( 99 )
 	pass
 

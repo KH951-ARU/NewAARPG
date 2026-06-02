@@ -22,7 +22,7 @@ var invulnerable : bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	state_machine.initialise( self )
-	player = PlayerManager.player
+	player = PlayerManager.Player
 	hit_box.Damaged.connect( _take_damage )
 	pass # Replace with function body.
 

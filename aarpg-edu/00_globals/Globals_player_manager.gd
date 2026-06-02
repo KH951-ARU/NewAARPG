@@ -1,4 +1,4 @@
 extends Node
 
 
-var player : player
+var Player : player

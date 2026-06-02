@@ -46,6 +46,7 @@ func  HandleInput( _event : InputEvent) -> State:
 	return null
 
 func _player_damaged( _hurt_box  ) -> void:
+	print(" hit")
 	hurtbox = _hurt_box
 	state_machine.change_state( self )
 	pass
